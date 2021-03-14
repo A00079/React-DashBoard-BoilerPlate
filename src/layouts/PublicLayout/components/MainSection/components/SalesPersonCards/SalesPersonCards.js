@@ -45,9 +45,9 @@ const SalesPersonCard = () => {
                 {
                     salesData.map((el, index) => {
                         return (
-                            <div class="p-1 w-full">
-                                <div class="h-full flex items-center border-gray-200 shadow-md border p-3 rounded-lg">
-                                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-md mr-4" src={`/img/${el.profile_img}.png`} />
+                            <div class="pr-2 pb-2 w-full">
+                                <div class="h-full flex items-center border-gray-200 shadow-md border px-2 py-1 lg:px-3 lg:py-2  rounded-lg">
+                                    <img alt="team" class="w-20 h-20 bg-gray-100 object-cover object-center flex-shrink-0 rounded-md mr-4" src={`/img/${el.profile_img}.png`} />
                                     <div class="flex-grow w-full">
                                         <div className="flex flex-row justify-between space-x-4">
                                             <div className="flex-grow w-1/2">

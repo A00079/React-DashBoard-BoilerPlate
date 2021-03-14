@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 const SalesPersonFilter = () => {
     const classes = useStyles();
     const [openSelectingGropuType, setSelectingGropuType] = React.useState(false);
-    const [selectedGroup, setSelectedGroup] = React.useState('Selecting Group Type');
+    const [selectedGroup, setSelectedGroup] = React.useState('Select Type');
 
     const handleSetGroup = (val) => {
         setSelectedGroup(val);
@@ -31,11 +31,12 @@ const SalesPersonFilter = () => {
     };
     return (
         <React.Fragment>
-            <section className="mt-3">
-                <div className="flex flex-row justify-between">
-                    <div class="relative inline-block text-left">
+            <section className="mt-1">
+                <div className="flex flex-wrap justify-between">
+                    <div class="relative inline-block text-left ml-1">
                         <div>
-                            <button onClick={() => handleSelectingGropuType()} type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-white" id="options-menu" aria-expanded="true" aria-haspopup="true">
+                            <button onClick={() => handleSelectingGropuType()} type="button" 
+                            class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-2 lg:px-4 py-2 bg-white text-xs lg:text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-white" id="options-menu" aria-expanded="true" aria-haspopup="true">
                                 {selectedGroup}
                                 <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />

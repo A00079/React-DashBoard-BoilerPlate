@@ -113,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
     },
     content: {
         flexGrow: 1,
-        padding: theme.spacing(3),
+        padding: theme.spacing(1),
     },
     grow: {
         flexGrow: 1,
@@ -141,6 +141,9 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('sm')]: {
             marginLeft: theme.spacing(3),
             width: 'auto',
+        },
+        [theme.breakpoints.down('xs')]: {
+            display: 'none'
         },
     },
     searchIcon: {
@@ -426,7 +429,7 @@ export default function MiniDrawer() {
                             <Typography className={classes.title} variant="h6" noWrap>
                                 <span className="font-semibold text-indigo-800">BoilerPlate</span>
                             </Typography>
-                            <small className="text-xs font-medium text-gray-400">{getCurrentDate()}</small>
+                            <small className={clsx(classes.title,'text-xs font-medium text-gray-400')}>{getCurrentDate()}</small>
                         </div>
                         <div className={classes.search}>
                             <div className={classes.searchIcon}>
@@ -442,7 +445,7 @@ export default function MiniDrawer() {
                             />
                         </div>
                         <div className={classes.grow} />
-                        <Button variant="contained" style={{ backgroundColor: '#068F38', marginRight: '10px' }}>
+                        <Button variant="contained" size="small" style={{ backgroundColor: '#068F38', marginRight: '10px' }}>
                             <div className="flex flex-row justify-between items-center space-x-1">
                                 <HistoryIcon className="text-white" />
                                 <small className="text-xs font-bold text-white capitalize">View History</small>
@@ -520,7 +523,7 @@ export default function MiniDrawer() {
                                     </div>
                                     <ThreeDotMenu />
                                 </div>
-                            </div> : <div className="-mx-2 p-0"><Avatar /></div>
+                            </div> : <div className="-mx-4 sm:-mx-2 p-0"><Avatar /></div>
                         }
                     </ListItem>
                 </List>
@@ -532,7 +535,7 @@ export default function MiniDrawer() {
                         <ListItem button onClick={handleStore}>
                             <ListItemIcon>
                                 <div className="bg-indigo-100 p-2 rounded ">
-                                    <StoreIcon className={open ? 'text-red-800' : 'text-red-800'} />
+                                    <StoreIcon className={open ? 'text-red-800' : 'text-red-800 -mx-3 sm:-mx-2'} />
                                 </div>
                             </ListItemIcon>
                             <ListItemText><span className="text-sm text-purple-800 font-bold">Manage Store</span></ListItemText>
@@ -551,7 +554,7 @@ export default function MiniDrawer() {
                             </ListItem>
                             <ListItem button className={classes.nested}>
                                 <ListItemIcon>
-                                    <div className="bg-indigo-100 p-0 rounded ">
+                                    <div className="bg-indigo-100 p-0 rounded">
                                         <EditIcon className={open ? 'text-green-700' : 'text-green-700'} />
                                     </div>
                                 </ListItemIcon>
@@ -562,7 +565,7 @@ export default function MiniDrawer() {
                     <div onClick={() => activePanel('salesteam')} className={activePanelNumber == '2' ? 'border-blue-700 border-l-4 rounded-r-full bg-indigo-100' : 'hover:border-blue-700 border-l-4 rounded-r-full hover:bg-indigo-100'}>
                         <ListItem button onClick={handleSalesPerson}>
                             <ListItemIcon>
-                                <div className="bg-indigo-100 p-2 rounded ">
+                                <div className="bg-indigo-100 p-2 rounded -mx-3 sm:-mx-2">
                                     <GroupAddIcon className={open ? 'text-purple-800' : 'text-purple-800'} />
                                 </div>
                             </ListItemIcon>
@@ -593,7 +596,7 @@ export default function MiniDrawer() {
                     <div onClick={() => activePanel('manageroutes')} className={activePanelNumber == '3' ? 'border-blue-700 border-l-4 rounded-r-full bg-indigo-100' : 'hover:border-blue-700 border-l-4 rounded-r-full hover:bg-indigo-100'}>
                         <ListItem button onClick={handleSalesTeamRoutes}>
                             <ListItemIcon>
-                                <div className="bg-indigo-100 p-2 rounded ">
+                                <div className="bg-indigo-100 p-2 rounded -mx-3 sm:-mx-2">
                                     <ExploreIcon className={open ? 'text-yellow-500' : 'text-yellow-500'} />
                                 </div>
                             </ListItemIcon>
@@ -632,7 +635,7 @@ export default function MiniDrawer() {
                     <div onClick={() => activePanel('assignroutes')} className={activePanelNumber == '4' ? 'border-blue-700 border-l-4 rounded-r-full bg-indigo-100' : 'hover:border-blue-700 border-l-4 rounded-r-full hover:bg-indigo-100'}>
                         <ListItem button onClick={handleAssignRoutes}>
                             <ListItemIcon>
-                                <div className="bg-indigo-100 p-2 rounded ">
+                                <div className="bg-indigo-100 p-2 rounded -mx-3 sm:-mx-2">
                                     <PersonPinCircleIcon className={open ? 'text-indigo-500' : 'text-indigo-500'} />
                                 </div>
                             </ListItemIcon>
@@ -663,7 +666,7 @@ export default function MiniDrawer() {
                     <div onClick={() => activePanel('createschedule')} className={activePanelNumber == '5' ? 'border-blue-700 border-l-4 rounded-r-full bg-indigo-100' : 'hover:border-blue-700 border-l-4 rounded-r-full hover:bg-indigo-100'}>
                         <ListItem button onClick={handleCreateSchedule}>
                             <ListItemIcon>
-                                <div className="bg-indigo-100 p-2 rounded ">
+                                <div className="bg-indigo-100 p-2 rounded -mx-3 sm:-mx-2">
                                     <AddAlarmIcon className={open ? 'text-green-700' : 'text-green-700'} />
                                 </div>
                             </ListItemIcon>
@@ -694,7 +697,7 @@ export default function MiniDrawer() {
                     <div onClick={() => activePanel('viewhistory')} className={activePanelNumber == '6' ? 'border-blue-700 border-l-4 rounded-r-full bg-indigo-100' : 'hover:border-blue-700 border-l-4 rounded-r-full hover:bg-indigo-100'}>
                         <ListItem button>
                             <ListItemIcon>
-                                <div className="bg-indigo-100 p-2 rounded ">
+                                <div className="bg-indigo-100 p-2 rounded -mx-3 sm:-mx-2">
                                     <VisibilityIcon className={open ? 'text-gray-700' : 'text-gray-700'} />
                                 </div>
                             </ListItemIcon>
@@ -703,7 +706,7 @@ export default function MiniDrawer() {
                     </div>
                     <ListItem button>
                         <ListItemIcon>
-                            <div className="bg-indigo-100 p-2 rounded ">
+                            <div className="bg-indigo-100 p-2 rounded -mx-2 sm:-mx-1">
                                 <ExitToAppIcon className={open ? 'text-blue-700' : 'text-blue-700'} />
                             </div>
                         </ListItemIcon>
@@ -713,7 +716,7 @@ export default function MiniDrawer() {
             </Drawer>
             <main className={clsx(classes.content, 'w-full')}>
                 <div className={classes.toolbar} />
-                <Typography paragraph>
+                <Typography paragraph className="pl-14 sm:pl-20 lg:pl-0">
                     <Banner />
                 </Typography>
                 <Typography paragraph>

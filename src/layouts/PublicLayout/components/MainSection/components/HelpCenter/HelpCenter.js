@@ -11,7 +11,7 @@ const HelpCenter = () => {
                         <h2 class="text-indigo-800 text-left title-font font-bold">Need Help?</h2>
                         <p class="text-gray-600 text-xs mb-1">Do you have any problem while using the Sales Management portal.</p>
                         <Button variant="contained" color="primary">
-                            <span className="text-xs">Contact Now</span>
+                            <span className="text-xs text-white">Contact Now</span>
                         </Button>
                     </div>
                 </div>

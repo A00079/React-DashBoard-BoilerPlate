@@ -9,7 +9,7 @@ const LoggedInEmployees = () => {
                     <div class="flex flex-wrap space-y-1 p-2">
                         <div class="w-full">
                             <div class="h-full flex items-center bg-yellow-100 border-yellow-400 border p-2 rounded-lg">
-                                <img alt="team" class="w-10 h-10 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80" />
+                                <img alt="team" class="w-10 h-10 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-2 lg:mr-4" src="https://dummyimage.com/80x80" />
                                 <div class="flex-grow">
                                     <h2 class="text-green-600 text-xs title-font font-medium">Holden Caulfield</h2>
                                     <p class="text-gray-500 text-xs">UI Designer</p>
@@ -26,7 +26,7 @@ const LoggedInEmployees = () => {
                         </div>
                         <div class="w-full">
                             <div class="h-full flex items-center bg-yellow-100 border-yellow-400 border p-2 rounded-lg">
-                                <img alt="team" class="w-10 h-10 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80" />
+                                <img alt="team" class="w-10 h-10 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-2 lg:mr-4" src="https://dummyimage.com/80x80" />
                                 <div class="flex-grow">
                                     <h2 class="text-green-600 text-xs title-font font-medium">Holden Caulfield</h2>
                                     <p class="text-gray-500 text-xs">UI Designer</p>
