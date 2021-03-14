@@ -17,7 +17,7 @@ const Banner = () => {
         <React.Fragment>
             <section>
                 <div className="w-full flex-col flex sm:flex-row justify-between space-x-0 sm:space-x-2 py-1">
-                    <div class="w-full mb-24 h-40 sm:w-1/2 lg:w-full text-gray-600 body-font">
+                    <div class="w-full mb-24 sm:mb-0 h-40 sm:w-1/2 lg:w-full text-gray-600 body-font">
                         <div class="container mx-auto px-5 flex md:flex-row flex-col rounded-lg items-center" style={{ background: '#E8F6ED' }}>
                             <div class="lg:flex-grow md:w-1/2 mb-0 lg:pr-24 md:pr-0 flex flex-col md:items-start md:text-left sm:mb-16 md:mb-0 items-center text-center">
                                 <h1 class="title-font text-lg lg:text-2xl mb-1 font-bold" style={{ color: '#88D985' }}>Welcome back! <span style={{ color: '#88D985' }}>Admin</span>
@@ -35,32 +35,32 @@ const Banner = () => {
                                 </div>
                             </div>
                         </div>
-                        <section className="main-emp-details flex flex-wrap justify-start mt-3 space-x-0">
+                        <section className="main-emp-details flex flex-wrap justify-start mt-1 sm:mt-0  space-x-0">
                             <SalesPersonFilter />
                             <SalesPersonFilter />
                             <SalesPersonFilter />
                         </section>
-                        {/* <section className="mt-2 h-80 overflow-auto custom-scroll scrollbar">
+                        <section className="mt-2 h-64 sm:h-80 overflow-auto custom-scroll scrollbar">
                             <div className="hidden lg:block">
                                 <SalesPersonCards />
                             </div>
                             <div className="lg:hidden">
                                 <MobileSalesPersonCard />
                             </div>
-                        </section> */}
+                        </section>
                     </div>
-                    <div className="w-full sm:w-1/2 short-employee-info">
+                    <div className="w-full sm:w-1/2 short-employee-info mt-96 sm:mt-0 ">
                         <EmployeeInfo />
                         <div className="logged-in-emp-details mt-2">
                             <LoggedInEmployees />
                         </div>
-                        {/* <div className="team-info mt-1">
+                        <div className="team-info mt-1">
                             <p className="text-gray-600 text-sm font-semibold py-1">Teams</p>
                             <TotalTeams />
                         </div>
                         <div className="need-help">
                             <HelpCenter />
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </section>

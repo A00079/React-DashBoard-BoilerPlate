@@ -13,12 +13,14 @@ const LoggedInEmployees = () => {
                                 <div class="flex-grow">
                                     <h2 class="text-green-600 text-xs title-font font-medium">Holden Caulfield</h2>
                                     <p class="text-gray-500 text-xs">UI Designer</p>
+                                    <p class="block sm:hidden text-gray-500 text-xs mt-1 border-yellow-400 border-t-2 border-dashed">Logged In Date</p>
                                 </div>
                                 <div class="flex-grow">
                                     <h2 class="text-blue-500 text-xs title-font font-medium">LogIn Time</h2>
                                     <p class="text-gray-500 text-xs">10:02:54</p>
+                                    <p class="block sm:hidden text-gray-500 text-xs mt-1 border-yellow-400 border-t-2 border-dashed">14-03-2021</p>
                                 </div>
-                                <div class="flex-grow">
+                                <div class="hidden sm:block flex-grow">
                                     <h2 class="text-blue-500 text-xs title-font font-medium">LogIn Date</h2>
                                     <p class="text-gray-500 text-xs">14-03-2021</p>
                                 </div>
@@ -30,12 +32,14 @@ const LoggedInEmployees = () => {
                                 <div class="flex-grow">
                                     <h2 class="text-green-600 text-xs title-font font-medium">Holden Caulfield</h2>
                                     <p class="text-gray-500 text-xs">UI Designer</p>
+                                    <p class="block sm:hidden text-gray-500 text-xs mt-1 border-yellow-400 border-t-2 border-dashed">Logged In Date</p>
                                 </div>
                                 <div class="flex-grow">
                                     <h2 class="text-blue-500 text-xs title-font font-medium">LogIn Time</h2>
                                     <p class="text-gray-500 text-xs">10:02:54</p>
+                                    <p class="block sm:hidden text-gray-500 text-xs mt-1 border-yellow-400 border-t-2 border-dashed">14-03-2021</p>
                                 </div>
-                                <div class="flex-grow">
+                                <div class="hidden sm:block flex-grow">
                                     <h2 class="text-blue-500 text-xs title-font font-medium">LogIn Date</h2>
                                     <p class="text-gray-500 text-xs">14-03-2021</p>
                                 </div>

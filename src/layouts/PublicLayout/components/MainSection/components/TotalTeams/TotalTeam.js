@@ -34,25 +34,27 @@ export default function TotalTeams() {
 
     return (
         <section className={classes.root}>
-            <div className="flex flex-col w-full">
-                <Avatar className={clsx(classes.orange,'mx-auto')}>H</Avatar>
-                <p className="text-center text-xs">Team one</p>
-            </div>
-            <div className="flex flex-col w-full">
-                <Avatar className={clsx(classes.purple,'mx-auto')}>AO</Avatar>
-                <p className="text-center text-xs">Team one</p>
-            </div>
-            <div className="flex flex-col w-full">
-                <Avatar className={clsx('bg-green-800 mx-auto')}>GH</Avatar>
-                <p className="text-center text-xs">Team one</p>
-            </div>
-            <div className="flex flex-col w-full">
-                <Avatar className={clsx(classes.brown,'mx-auto')}>TY</Avatar>
-                <p className="text-center text-xs">Team one</p>
-            </div>
-            <div className="flex flex-col w-full">
-                <Avatar className={clsx(classes.amber,'mx-auto')}>JA</Avatar>
-                <p className="text-center text-xs">Team one</p>
+            <div className="flex flex-wrap justify-start">
+                <div className="flex flex-col w-16 sm:w-20 mt-1 sm:mt-0">
+                    <Avatar className={clsx(classes.orange, 'mx-auto')}>H</Avatar>
+                    <p className="text-center text-xs">Team one</p>
+                </div>
+                <div className="flex flex-col w-16 sm:w-20 mt-1 sm:mt-0">
+                    <Avatar className={clsx(classes.purple, 'mx-auto')}>AO</Avatar>
+                    <p className="text-center text-xs">Team one</p>
+                </div>
+                <div className="flex flex-col w-16 sm:w-20 mt-1 sm:mt-0">
+                    <Avatar className={clsx('bg-green-800 mx-auto')}>GH</Avatar>
+                    <p className="text-center text-xs">Team one</p>
+                </div>
+                <div className="flex flex-col w-16 sm:w-20 mt-1 sm:mt-0">
+                    <Avatar className={clsx(classes.brown, 'mx-auto')}>TY</Avatar>
+                    <p className="text-center text-xs">Team one</p>
+                </div>
+                <div className="flex flex-col w-16 sm:w-20 mt-1 sm:mt-0">
+                    <Avatar className={clsx(classes.amber, 'mx-auto')}>JA</Avatar>
+                    <p className="text-center text-xs">Team one</p>
+                </div>
             </div>
         </section>
     );

@@ -534,8 +534,8 @@ export default function MiniDrawer() {
                     <div onClick={() => activePanel('managestore')} className={activePanelNumber == '1' ? 'border-blue-700 border-l-4 rounded-r-full bg-indigo-100' : 'hover:border-blue-700 border-l-4 rounded-r-full hover:bg-indigo-100'}>
                         <ListItem button onClick={handleStore}>
                             <ListItemIcon>
-                                <div className="bg-indigo-100 p-2 rounded ">
-                                    <StoreIcon className={open ? 'text-red-800' : 'text-red-800 -mx-3 sm:-mx-2'} />
+                                <div className="bg-indigo-100 p-2 rounded -mx-3 sm:-mx-2">
+                                    <StoreIcon className={open ? 'text-red-800' : 'text-red-800'} />
                                 </div>
                             </ListItemIcon>
                             <ListItemText><span className="text-sm text-purple-800 font-bold">Manage Store</span></ListItemText>
