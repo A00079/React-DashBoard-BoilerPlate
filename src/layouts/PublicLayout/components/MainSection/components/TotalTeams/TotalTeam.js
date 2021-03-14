@@ -51,10 +51,6 @@ export default function TotalTeams() {
                     <Avatar className={clsx(classes.brown, 'mx-auto')}>TY</Avatar>
                     <p className="text-center text-xs">Team one</p>
                 </div>
-                <div className="flex flex-col w-16 sm:w-20 mt-1 sm:mt-0">
-                    <Avatar className={clsx(classes.amber, 'mx-auto')}>JA</Avatar>
-                    <p className="text-center text-xs">Team one</p>
-                </div>
             </div>
         </section>
     );
